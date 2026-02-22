@@ -7,7 +7,7 @@
 using namespace std;
 
 //HW2-1
-//Problem1
+//Problem1(HW)
 /*int main()
 {
     int n, t, num=0;
@@ -112,7 +112,7 @@ return 0;
 
 }*/
 
-//Problem1
+//Problem1(上課)
 /*int main()
 {
     float a=0.1, b=0.2;
