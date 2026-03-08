@@ -7,7 +7,8 @@
 #include <vector>
 using namespace std;
 
-// pronblem1
+// 課堂練習
+//  pronblem1
 /*int min(int a, int b);
 int main()
 {
@@ -102,10 +103,11 @@ int main() {
   return 0;
 }*/
 
-// Problem5
+// Problem5(找過門檻最多的作業，如果多個作業都一樣多，回傳最小的index)
 // threshold是門檻，assigmentCnt是作業數，gradeCnt是學生數，grades是二維陣列
 /*int mostheighGrades(int threshold, int assigmentCnt, int gradeCnt, int
-grades[][50]) {
+grades[][50])
+{
   //count是用來計幾個過門檻(>=threshold)的，大於就＋＋，回傳count，max是用來記錄最大的count，maxindex是用來記錄最大的count對應的index
   int count = 0, max = 0, maxindex = 0;
   for (int i = 0; i < assigmentCnt; i++) {
@@ -138,3 +140,48 @@ int main() {
 }*/
 
 // End
+
+// HW
+// Problem1
+// 函數功能：計算各位置達到身高門檻的球員人數
+// 參數說明：height[]是身高，position[]是位置，numPlayer是球員總人數，heightLimit是身高門檻
+
+/*void validateHeight(int height[], int position[], int numPlayer,
+                    int heightLimit) {
+  int count1 = 0, count2 = 0, count3 = 0;
+  heightLimit *= 12; // 將身高門檻從英尺換算成英寸
+
+  // 用switch
+  // case判斷位置(用position當變數判斷位置)，如果身高大於等於身高門檻，就count++
+  for (int i = 0; i < numPlayer; i++) {
+    switch (position[i]) {
+    case 1:
+      if (height[i] >= heightLimit)
+        count1++;
+      break;
+    case 2:
+      if (height[i] >= heightLimit)
+        count2++;
+      break;
+    case 3:
+      if (height[i] >= heightLimit)
+        count3++;
+      break;
+    }
+  }
+  cout << count1 << "," << count2 << "," << count3 << "\n";
+}
+
+int main() {
+  int numPlayer, heightLimit;
+  cin >> numPlayer >> heightLimit;
+  int height[numPlayer], position[numPlayer];
+  for (int i = 0; i < numPlayer; i++) {
+    cin >> height[i]; // 先讀全部身高
+  }
+  for (int i = 0; i < numPlayer; i++) {
+    cin >> position[i]; // 再讀全部位置
+  }
+  validateHeight(height, position, numPlayer, heightLimit);
+  return 0;
+}*/
